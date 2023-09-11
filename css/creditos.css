@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/* Modificações geral e body */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: #1e1c2a;
+    background-color: #fff;
+}
+
+/* Modificações no header e barra de navegação */
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5% 5%;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .titulo{
+    color: #1b2e35;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    margin-left: 40px;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a{
+    color: #1e1c2a;
+    font-size: 1.0rem;
+    font-weight: 500;
+    transition: all 0.5s;
+    color: #ff4f5a;
+}
+
+.navigation ul li a:hover{
+    color: #1b2e35 ;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #1e1c2a;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background-color: #feb847;
+}
+
+/* Modificações no main da página */ 
+
+.homeCred{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
